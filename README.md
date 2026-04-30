@@ -26,11 +26,7 @@ graph LR
 
 ```mermaid
 graph TD
-    subgraph "src/"
-        MAIN[main.rs]
-    end
-
-    subgraph "src/domain/ — pure functions"
+    subgraph "src/domain/"
         EV[event.rs<br/>wide event]
         COL[column.rs<br/>typed series]
         SEG[segment.rs<br/>time-partitioned, immutable]
@@ -56,8 +52,6 @@ graph TD
         STF[storage/file/<br/>local filesystem]
     end
 
-    MAIN --> ING
-    MAIN --> QE
     ING --> ENC
     ING --> SEG
     ING --> SCH
