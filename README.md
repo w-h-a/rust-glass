@@ -1,5 +1,9 @@
 # rust-glass
 
+<div align="center">
+  <img src="./.github/assets/rust-glass.png" alt="Rust-Glass Mascot" />
+</div>
+
 Purpose-built columnar wide-event engine for observability.
 
 Single binary, zero infrastructure dependencies. Accepts OTel spans, stores them in immutable columnar segments, and serves arbitrary high-cardinality queries. Wide events are the only primitive. No three pillars, no separate metrics/logs/traces.
